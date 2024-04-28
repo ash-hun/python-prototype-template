@@ -1,1 +1,4 @@
-# GenAI APP
+## Python Protype Template
+
+- **Client** : streamlit
+- **Server** : fastAPI
