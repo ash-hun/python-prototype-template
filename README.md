@@ -1,8 +1,37 @@
-## Python Protype Template
+## Python Protyping App Template
 
-- **Client** : streamlit
+- **Client** : Streamlit
 - **Server** : fastAPI
 
+## Running
+
+Set-up your python development environment  
+(This template used python 3.10.12)
+```
+$ pip install -r requirements.txt
+```
+- Connect Client Server
+    ```
+    $ cd client && streamlit run app.py
+    ```
+    You can now view your client in your browser `localhost:8502`
+- Connect fastAPI Server
+    ```
+    $ uvicorn server.main.py
+    ```
+    You can now view your server in your browser `localhost:8000`
+- Server Docs (=Swagger)
+    ```
+    $ uvicorn server.main.py
+    ```
+    You can now view your swagger in your browser `localhost:8000/docs`
+- Disconnect Server
+    - Window OS & MacOS Shorcut : `Ctrl + C`
+    ```
+    $ ^C  Stopping...
+    ```
+
+## Structure
 
 ```bash
 .
@@ -21,3 +50,4 @@
         ├── __init__.py
         └── chat.py
 ```
+
